@@ -15,6 +15,7 @@ with pure Python or Matlab.
 * The mixing of C++ and Python through Cython
 The C++ class "Disperser" defined in "dispersion.h"/"dispersion.cpp"
 is made available for easy interaction in Python using wrapper
+<<<<<<< HEAD:README.md
 functions which are defined in the Cython file "mymod.pyx".
 
 To process it use the command:
