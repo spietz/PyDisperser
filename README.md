@@ -1,4 +1,4 @@
-* Introduction
+# Introduction
 Monte Carlo method for studying the behavior of a dispersant inserted
 into a steady boundary layer channel flow. The approach is the
 one-particle analysis, where the random path of a single particle
@@ -12,20 +12,17 @@ The model is implemented in C++ and Python because of poor runtime
 performance for this kind of models if the code is pure Python or
 Matlab. The implementation is quite efficient and bears no comparison
 with pure Python or Matlab.
-* The mixing of C++ and Python through Cython
+# The mixing of C++ and Python through Cython
 The C++ class "Disperser" defined in "dispersion.h"/"dispersion.cpp"
-is made available for easy interaction in Python using wrapper
-<<<<<<< HEAD:README.md
-functions which are defined in the Cython file "mymod.pyx".
-
-To process it use the command:
+is made available for easy interaction in Python using wrapper functions 
+which are defined in the Cython file "mymod.pyx".
+To process it, use the command:
 ```
 cython --cplus mymod.pyx
 ```
-
-Compile the C++ code: `code`
+To compile the C++ code, use the command:
 ```
 python setup.py build_ext --inplace
 ```
-* Requirements
+# Requirements
 libboost-python
