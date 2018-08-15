@@ -15,10 +15,16 @@ with pure Python or Matlab.
 * The mixing of C++ and Python through Cython
 The C++ class "Disperser" defined in "dispersion.h"/"dispersion.cpp"
 is made available for easy interaction in Python using wrapper
-functions which are defined in the Cython file "mymod.pyx", 
-which may be processes using the command:
->> cython --cplus mymod.pyx
-Compile the C++ code
->> python setup.py build_ext --inplace
+functions which are defined in the Cython file "mymod.pyx".
+
+To process it use the command:
+```
+cython --cplus mymod.pyx
+```
+
+Compile the C++ code: `code`
+```
+python setup.py build_ext --inplace
+```
 * Requirements
 libboost-python
